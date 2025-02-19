@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ChouroukNasri/ArgoCD
+    repoURL: https://github.com/ChouroukNasri/Project_Argo.git  # ✅ Mise à jour avec le bon dépôt
     targetRevision: main
-    path: app  # Assurez-vous que ce dossier existe dans votre repo GitHub
+    path: .  # ⚠️ Mettre "." si les fichiers sont à la racine, sinon utilisez "app" si un dossier "app/" existe
   destination:
     server: https://kubernetes.default.svc
     namespace: my-namespace
